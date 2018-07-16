@@ -10,9 +10,11 @@
 		D840757920FD479900A78301 /* RxSwiftEventBus.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8DC4BDF20F967F900EF0B63 /* RxSwiftEventBus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D840757A20FD47A500A78301 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D86B8C1820F96A360097A42F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D840757C20FD494100A78301 /* AnotherTestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840757B20FD494100A78301 /* AnotherTestEvent.swift */; };
+		D840758220FD534100A78301 /* EventDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840758120FD534100A78301 /* EventDispatcher.swift */; };
+		D840758C20FE029800A78301 /* EventStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840758B20FE029800A78301 /* EventStream.swift */; };
 		D86B8C1520F96A110097A42F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B8C1320F96A110097A42F /* Event.swift */; };
 		D86B8C1620F96A110097A42F /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B8C1420F96A110097A42F /* EventBus.swift */; };
-		D86B8C1920F96A360097A42F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86B8C1820F96A360097A42F /* RxSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D86B8C1920F96A360097A42F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86B8C1820F96A360097A42F /* RxSwift.framework */; };
 		D8BE632C20FD25D8001A2484 /* RxSwiftEventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE632B20FD25D8001A2484 /* RxSwiftEventBusTests.swift */; };
 		D8BE632E20FD25D8001A2484 /* RxSwiftEventBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DC4BDF20F967F900EF0B63 /* RxSwiftEventBus.framework */; };
 		D8BE633420FD2BBF001A2484 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86B8C1820F96A360097A42F /* RxSwift.framework */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		D840757B20FD494100A78301 /* AnotherTestEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherTestEvent.swift; sourceTree = "<group>"; };
+		D840758120FD534100A78301 /* EventDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDispatcher.swift; sourceTree = "<group>"; };
+		D840758B20FE029800A78301 /* EventStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStream.swift; sourceTree = "<group>"; };
 		D86B8C1320F96A110097A42F /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D86B8C1420F96A110097A42F /* EventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
 		D86B8C1820F96A360097A42F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 			children = (
 				D86B8C1320F96A110097A42F /* Event.swift */,
 				D86B8C1420F96A110097A42F /* EventBus.swift */,
+				D840758120FD534100A78301 /* EventDispatcher.swift */,
+				D840758B20FE029800A78301 /* EventStream.swift */,
 				D8DC4BE320F967F900EF0B63 /* Info.plist */,
 			);
 			path = RxSwiftEventBus;
@@ -244,7 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D840758C20FE029800A78301 /* EventStream.swift in Sources */,
 				D86B8C1520F96A110097A42F /* Event.swift in Sources */,
+				D840758220FD534100A78301 /* EventDispatcher.swift in Sources */,
 				D86B8C1620F96A110097A42F /* EventBus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

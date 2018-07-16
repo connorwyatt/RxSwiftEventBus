@@ -18,8 +18,9 @@ class RxSwiftEventBusTests: XCTestCase
   {
     let eventDeliveredExpectation = XCTestExpectation()
 
-    eventBus.listen()
-      .subscribe(onNext: { (event: TestEvent) in
+    eventBus
+      .select(TestEvent.self)
+      .subscribe(onNext: { event in
         XCTAssertEqual(event.message, "Hello")
 
         eventDeliveredExpectation.fulfill()
@@ -36,8 +37,9 @@ class RxSwiftEventBusTests: XCTestCase
     let eventDeliveredExpectation = XCTestExpectation()
     eventDeliveredExpectation.isInverted = true
 
-    eventBus.listen()
-      .subscribe(onNext: { (_: TestEvent) in
+    eventBus
+      .select(TestEvent.self)
+      .subscribe(onNext: { _ in
         eventDeliveredExpectation.fulfill()
       })
       .disposed(by: disposeBag)
