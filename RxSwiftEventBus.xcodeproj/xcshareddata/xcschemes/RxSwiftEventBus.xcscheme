@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D8BE632820FD25D8001A2484"
+               BuildableName = "RxSwiftEventBusTests.xctest"
+               BlueprintName = "RxSwiftEventBusTests"
+               ReferencedContainer = "container:RxSwiftEventBus.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D8DC4BDE20F967F900EF0B63"
+            BuildableName = "RxSwiftEventBus.framework"
+            BlueprintName = "RxSwiftEventBus"
+            ReferencedContainer = "container:RxSwiftEventBus.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

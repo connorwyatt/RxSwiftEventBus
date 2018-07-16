@@ -7,20 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D840757920FD479900A78301 /* RxSwiftEventBus.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8DC4BDF20F967F900EF0B63 /* RxSwiftEventBus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D840757A20FD47A500A78301 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D86B8C1820F96A360097A42F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D840757C20FD494100A78301 /* AnotherTestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D840757B20FD494100A78301 /* AnotherTestEvent.swift */; };
 		D86B8C1520F96A110097A42F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B8C1320F96A110097A42F /* Event.swift */; };
 		D86B8C1620F96A110097A42F /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B8C1420F96A110097A42F /* EventBus.swift */; };
 		D86B8C1920F96A360097A42F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86B8C1820F96A360097A42F /* RxSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D8BE632C20FD25D8001A2484 /* RxSwiftEventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE632B20FD25D8001A2484 /* RxSwiftEventBusTests.swift */; };
+		D8BE632E20FD25D8001A2484 /* RxSwiftEventBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DC4BDF20F967F900EF0B63 /* RxSwiftEventBus.framework */; };
+		D8BE633420FD2BBF001A2484 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86B8C1820F96A360097A42F /* RxSwift.framework */; };
+		D8BE633620FD2BE0001A2484 /* TestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE633520FD2BE0001A2484 /* TestEvent.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D8BE632F20FD25D8001A2484 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8DC4BD620F967F900EF0B63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8DC4BDE20F967F900EF0B63;
+			remoteInfo = RxSwiftEventBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D840757820FD478F00A78301 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D840757A20FD47A500A78301 /* RxSwift.framework in CopyFiles */,
+				D840757920FD479900A78301 /* RxSwiftEventBus.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D840757B20FD494100A78301 /* AnotherTestEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherTestEvent.swift; sourceTree = "<group>"; };
 		D86B8C1320F96A110097A42F /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D86B8C1420F96A110097A42F /* EventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
 		D86B8C1820F96A360097A42F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		D8BE632920FD25D8001A2484 /* RxSwiftEventBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftEventBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BE632B20FD25D8001A2484 /* RxSwiftEventBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftEventBusTests.swift; sourceTree = "<group>"; };
+		D8BE632D20FD25D8001A2484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8BE633520FD2BE0001A2484 /* TestEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEvent.swift; sourceTree = "<group>"; };
 		D8DC4BDF20F967F900EF0B63 /* RxSwiftEventBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwiftEventBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DC4BE320F967F900EF0B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D8BE632620FD25D8001A2484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BE632E20FD25D8001A2484 /* RxSwiftEventBus.framework in Frameworks */,
+				D8BE633420FD2BBF001A2484 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8DC4BDB20F967F900EF0B63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +85,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D8BE632A20FD25D8001A2484 /* RxSwiftEventBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				D840757B20FD494100A78301 /* AnotherTestEvent.swift */,
+				D8BE632B20FD25D8001A2484 /* RxSwiftEventBusTests.swift */,
+				D8BE633520FD2BE0001A2484 /* TestEvent.swift */,
+				D8BE632D20FD25D8001A2484 /* Info.plist */,
+			);
+			path = RxSwiftEventBusTests;
+			sourceTree = "<group>";
+		};
 		D8DC4BD520F967F900EF0B63 = {
 			isa = PBXGroup;
 			children = (
 				D8DC4BE120F967F900EF0B63 /* RxSwiftEventBus */,
+				D8BE632A20FD25D8001A2484 /* RxSwiftEventBusTests */,
 				D8DC4BE020F967F900EF0B63 /* Products */,
 				D86B8C1720F96A350097A42F /* Frameworks */,
 			);
@@ -53,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D8DC4BDF20F967F900EF0B63 /* RxSwiftEventBus.framework */,
+				D8BE632920FD25D8001A2484 /* RxSwiftEventBusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +138,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D8BE632820FD25D8001A2484 /* RxSwiftEventBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8BE633320FD25D9001A2484 /* Build configuration list for PBXNativeTarget "RxSwiftEventBusTests" */;
+			buildPhases = (
+				D8BE632520FD25D8001A2484 /* Sources */,
+				D8BE632620FD25D8001A2484 /* Frameworks */,
+				D8BE632720FD25D8001A2484 /* Resources */,
+				D840757820FD478F00A78301 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8BE633020FD25D8001A2484 /* PBXTargetDependency */,
+			);
+			name = RxSwiftEventBusTests;
+			productName = RxSwiftEventBusTests;
+			productReference = D8BE632920FD25D8001A2484 /* RxSwiftEventBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D8DC4BDE20F967F900EF0B63 /* RxSwiftEventBus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8DC4BE720F967F900EF0B63 /* Build configuration list for PBXNativeTarget "RxSwiftEventBus" */;
@@ -104,9 +181,13 @@
 		D8DC4BD620F967F900EF0B63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Connor Wyatt";
 				TargetAttributes = {
+					D8BE632820FD25D8001A2484 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					D8DC4BDE20F967F900EF0B63 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
@@ -126,11 +207,19 @@
 			projectRoot = "";
 			targets = (
 				D8DC4BDE20F967F900EF0B63 /* RxSwiftEventBus */,
+				D8BE632820FD25D8001A2484 /* RxSwiftEventBusTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D8BE632720FD25D8001A2484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8DC4BDD20F967F900EF0B63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +230,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D8BE632520FD25D8001A2484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BE633620FD2BE0001A2484 /* TestEvent.swift in Sources */,
+				D8BE632C20FD25D8001A2484 /* RxSwiftEventBusTests.swift in Sources */,
+				D840757C20FD494100A78301 /* AnotherTestEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8DC4BDA20F967F900EF0B63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,7 +251,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D8BE633020FD25D8001A2484 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8DC4BDE20F967F900EF0B63 /* RxSwiftEventBus */;
+			targetProxy = D8BE632F20FD25D8001A2484 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D8BE633120FD25D9001A2484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5QR7Y8KB8K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = RxSwiftEventBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.connorwyatt.RxSwiftEventBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D8BE633220FD25D9001A2484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5QR7Y8KB8K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = RxSwiftEventBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.connorwyatt.RxSwiftEventBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		D8DC4BE520F967F900EF0B63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,6 +489,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D8BE633320FD25D9001A2484 /* Build configuration list for PBXNativeTarget "RxSwiftEventBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8BE633120FD25D9001A2484 /* Debug */,
+				D8BE633220FD25D9001A2484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D8DC4BD920F967F900EF0B63 /* Build configuration list for PBXProject "RxSwiftEventBus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
