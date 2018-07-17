@@ -1,9 +1,14 @@
 import Foundation
 import RxSwiftEventBus
 
-struct AnotherTestEvent: Event
+class AnotherTestEvent: Event
 {
-  static let type = "AnotherTestEvent"
-
   let message: String
+
+  init(message: String)
+  {
+    self.message = message
+
+    super.init()
+  }
 }

@@ -49,7 +49,8 @@ class RxSwiftEventBusTests: XCTestCase
     wait(for: [eventDeliveredExpectation], timeout: 1)
   }
 
-  func testAllEventsAreDelivered() {
+  func testAllEventsAreDelivered()
+  {
     let messages: [RxSwiftEventBus.Event] = [
       TestEvent(message: "Hello"),
       AnotherTestEvent(message: "Hello"),

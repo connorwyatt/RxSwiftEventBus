@@ -1,6 +1,9 @@
 import Foundation
 
-public protocol Event
+open class Event
 {
-  static var type: String { get }
+  public let eventId = UUID()
+  public let createdAt = Date()
+
+  public init() {}
 }
