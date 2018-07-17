@@ -48,4 +48,24 @@ class RxSwiftEventBusTests: XCTestCase
 
     wait(for: [eventDeliveredExpectation], timeout: 1)
   }
+
+  func testAllEventsAreDelivered() {
+    let messages: [RxSwiftEventBus.Event] = [
+      TestEvent(message: "Hello"),
+      AnotherTestEvent(message: "Hello"),
+      TestEvent(message: "Blah"),
+      AnotherTestEvent(message: "Blah")
+    ]
+
+    let eventDeliveredExpectation = XCTestExpectation()
+    eventDeliveredExpectation.expectedFulfillmentCount = messages.count
+
+    eventBus.stream
+      .subscribe(onNext: { _ in eventDeliveredExpectation.fulfill() })
+      .disposed(by: disposeBag)
+
+    messages.forEach(eventBus.send)
+
+    wait(for: [eventDeliveredExpectation], timeout: 1)
+  }
 }
