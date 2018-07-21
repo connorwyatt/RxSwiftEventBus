@@ -9,7 +9,7 @@ public class EventBus: EventDispatcher, EventStream
       let observer = self.notificationCenter.addObserver(
         forName: self.notificationName,
         object: nil,
-        queue: self.operationQueue,
+        queue: nil,
         using: { notification in
           guard let event = notification.userInfo?[self.eventKey] as? Event else
           {
@@ -31,13 +31,6 @@ public class EventBus: EventDispatcher, EventStream
   private let notificationName =
     NSNotification.Name(rawValue: "EventBusEventDispatched")
   private let eventKey = UUID().uuidString
-  private let operationQueue: OperationQueue = {
-    let operationQueue = OperationQueue()
-
-    operationQueue.qualityOfService = .background
-
-    return operationQueue
-  }()
 
   private let disposeBag = DisposeBag()
 
