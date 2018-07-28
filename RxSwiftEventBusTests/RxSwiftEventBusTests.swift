@@ -20,7 +20,9 @@ class RxSwiftEventBusTests: XCTestCase
 
     eventBus
       .select(TestEvent.self)
-      .subscribe(onNext: { event in
+      .subscribe(onNext: {
+        let (event, _) = $0
+
         XCTAssertEqual(event.message, "Hello")
 
         eventDeliveredExpectation.fulfill()
@@ -51,7 +53,7 @@ class RxSwiftEventBusTests: XCTestCase
 
   func testAllEventsAreDelivered()
   {
-    let messages: [RxSwiftEventBus.Event] = [
+    let messages: [Any] = [
       TestEvent(message: "Hello"),
       AnotherTestEvent(message: "Hello"),
       TestEvent(message: "Blah"),

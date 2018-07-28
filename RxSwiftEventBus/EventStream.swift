@@ -3,7 +3,7 @@ import RxSwift
 
 public protocol EventStream
 {
-  var stream: Observable<Event> { get }
+  var stream: Observable<EventNotification<Any>> { get }
 
-  func select<T: Event>(_ type: T.Type) -> Observable<T>
+  func select<T>(_ type: T.Type) -> Observable<EventNotification<T>>
 }

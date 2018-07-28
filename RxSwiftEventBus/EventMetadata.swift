@@ -1,9 +1,7 @@
 import Foundation
 
-open class Event
+public struct EventMetadata
 {
   public let eventId = UUID()
   public let createdAt = Date()
-
-  public init() {}
 }
